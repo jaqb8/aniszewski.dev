@@ -1,50 +1,64 @@
-# Blogster
+# @jaqb8 Personal Portfolio and Blog
 
-Theme: **bubblegum**
+Welcome to the repository of my personal website, a seamless blend of my portfolio and blog. Here, I showcase my projects, share my thoughts, and pen down my experiences.
 
-Blogster is a collection of beautiful, accessible and performant blog templates built with [Astro](https://astro.build) and [Markdoc](https://markdoc.dev).
+## Technologies Used
 
-Check out the demo here - [Blogster bubblegum template](https://blogster-bubblegum.netlify.app).
+- **Astro:** A modern front-end framework for faster websites.
+- **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
+- **Blogster Bubblegum Template:** The base design that I have transformed to reflect my style and preferences.
 
-## Bubblegum Template
+## Deployment
 
-A beautiful, performant and accessible theme built with [Tailwind](https://tailwindcss.com).
+This website is seamlessly deployed on **Netlify**. Visit my live website [here](https://jaqb8.netlify.app/).
 
-- **Fast**. Fast by default. Astro websites are engineered to be fast and load before you could blink, even when not cached.
-- **Dark mode**. All themes have light/dark mode built-in.
-- **Mobile first**. Responsive and loads fast in all devices.
-- **Accessible**. A well thought out semantic and accessible content.
-- **Perfect lighthouse score.** 100 across the board.
-- **Easy content authoring**. Author content using markdown (`.md`) from your code editor or directly in GitHub.
-- **Extended markdown with [Markdoc](https://markdoc.dev).** Type-safe custom components like YouTube embed, Twitter embed (or anything you want really) in your markdown (`.md`) files.
-- **RSS feed**. Your blog has an RSS feed setup that can be accessed at `/rss.xml`.
-- **SEO**. All pages are setup with all the SEO you might need.
+## Features
 
-## How do I add content?
+- **Portfolio:** A detailed look into the projects I've poured my heart into.
+- **Blog:** A space where I share my thoughts, knowledge, and experiences in the tech industry and beyond.
+- **Responsive Design:** Whether you're on a desktop, tablet, or mobile, my website looks great across all devices!
 
-All the content is written in markdown (.md) and grouped as `blog` or `projects` in the `content` directory. All the default markdown syntax will work. You also have a few example custom markdown elements like _YouTube embed_, _Twitter embed_, etc. You can create your own custom components too in two easy steps.
+## Local Development
 
-1. Add a markdoc config. Check out the markdoc config in [src/lib/markdoc/config.ts](src/lib/markdoc/config.ts) to learn how to add custom components.
-2. Add a component to render your custom component. Check out the Renderer in [src/components/Renderer.astro](src/components/Renderer.astro).
+Want to run this website locally? Follow the steps below:
 
-## How do I make it my blog?
+1. **Clone the Repository**
 
-Easy.
+   ```bash
+   git clone https://github.com/your-github-username/your-repository-name.git
+   ```
 
-- All content is static and everything is straight forward. Change whatever you need to change.
-- Delete or update the content in `content/{content-group}`. `content-group` could be `blog`, `projects` or `anything`.
-- (Optional) If you need more content types like _Notes_, just create a new dir in `content` and add a new frontmatter validator like [src/lib/markdoc/blog/frontmatter](src/lib/markdoc/blog/frontmatter).
+2. **Clone the Repository**
 
-## How do I deploy?
+   ```bash
+   cd your-repository-name
+   ```
 
-`yarn build` will generate a static website in `dist` dir. You can host it with any static hosting. If you need a recommendation, check out [Netlify](netlify.com).
+3. **Clone the Repository**
+
+   ```bash
+    npm install
+   ```
+
+4. **Clone the Repository**
+
+   ```bash
+    npm run dev
+   ```
+
+Now, the website should be running on http://localhost:3000/ (or the port specified).
+
+## Contribution
+
+While this is primarily my personal space, if you notice any bugs or areas of improvement, please feel free to raise an issue or submit a pull request.
 
 ## Credit
 
-Thanks to other templates that inspired this theme.
+Huge thanks to:
 
 - [Official Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog)
+- [Blogster Bubblegum Template](https://github.com/flexdinesh/blogster)
 
 ## License
 
-MIT © [Dinesh Pandiyan](https://github.com/flexdinesh)
+MIT © [Jakub Aniszewski](https://github.com/jaqb8)
