@@ -10,7 +10,7 @@ Welcome to the repository of my personal website, a seamless blend of my portfol
 
 ## Deployment
 
-This website is seamlessly deployed on **Netlify**. Visit my live website [here](https://jaqb8.netlify.app/).
+This website is seamlessly deployed on **Netlify**. Visit my live website [here](https://jaqb8.dev).
 
 ## Features
 
