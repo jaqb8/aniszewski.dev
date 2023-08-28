@@ -10,7 +10,7 @@ const posts = await readAll({
   frontmatterSchema: blog,
 });
 
-const WIP = true;
+const WIP = false;
 
 const sortedPosts = posts
   .filter((p) => p.frontmatter.draft !== true)
