@@ -1,4 +1,4 @@
-# @jaqb8 Personal Portfolio and Blog
+# Personal Portfolio and Blog
 
 Welcome to the repository of my personal website, a seamless blend of my portfolio and blog. Here, I showcase my projects, share my thoughts, and pen down my experiences.
 

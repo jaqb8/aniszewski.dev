@@ -1,0 +1,47 @@
+---
+import { readOne, readAll } from "../../lib/markdoc/read";
+import { project } from "../../lib/markdoc/frontmatter.schema";
+import Renderer from "../../components/Renderer.astro";
+import ProjectMeta from "../../components/ProjectMeta.astro";
+import { SITE_URL } from "../../config";
+import ProjectLayout from "src/layouts/ProjectLayout.astro";
+
+export async function getStaticPaths() {
+  const projects = await readAll({
+    directory: "projects",
+    frontmatterSchema: project,
+  });
+
+  const filteredProjects = projects.filter((p) => p.frontmatter.draft !== true);
+
+  return filteredProjects.map((post) => {
+    return { params: { slug: post.slug } };
+  });
+}
+
+const { slug } = Astro.params;
+if (typeof slug !== "string") {
+  throw Error(`slug should be string. Received: ${slug}`);
+}
+
+const { content, frontmatter } = await readOne({
+  directory: "projects",
+  slug,
+  frontmatterSchema: project,
+});
+
+const ogImageAbsoluteUrl = frontmatter.ogImagePath
+  ? new URL(frontmatter.ogImagePath, SITE_URL).toString()
+  : undefined;
+---
+
+<ProjectLayout title={frontmatter.title} date={frontmatter.date}>
+  <ProjectMeta
+    title={frontmatter.title}
+    description={frontmatter.description}
+    pagePath={`/projects/${slug}`}
+    ogImageAbsoluteUrl={ogImageAbsoluteUrl}
+    slot="meta"
+  />
+  <Renderer content={content} slot="content" />
+</ProjectLayout>
