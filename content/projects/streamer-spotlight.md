@@ -11,7 +11,7 @@ url: https://github.com/jaqb8/streamer-spotlight
 
 **Github:** [github.com/jaqb8/streamer-spotlight](https://github.com/jaqb8/streamer-spotlight)
 
-**Visit live [here](jaqb8.github.io/streamer-spotlight/)!**
+**Visit live [here](https://jaqb8.github.io/streamer-spotlight/)!**
 
 Streamers Spotlight is a web application designed to bridge the gap between streamers and their target audience. Developed as a comprehensive platform, it serves as a digital hub where streamers can showcase their unique content, and viewers can discover and engage with them. The application is engineered using a robust stack of technologies, ensuring scalability, efficiency, and a seamless user experience.
 
